@@ -2,6 +2,10 @@
 go
 USE [DoAnFinal]
 GO
+
+/* hhahahahha */
+
+	 
 /****** Object:  Table [dbo].[__EFMigrationsHistory]    Script Date: 10/18/2024 12:17:22 PM ******/
 SET ANSI_NULLS ON
 GO
