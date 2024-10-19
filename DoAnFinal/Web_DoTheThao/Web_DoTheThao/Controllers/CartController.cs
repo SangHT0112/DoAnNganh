@@ -39,6 +39,8 @@ namespace Web_DoTheThao.Controllers
 			}
 			HttpContext.Session.SetJson("Cart", cart);
 
+			TempData["success"] = "Thêm vào giỏ hàng thành công";
+
 			return Redirect(Request.Headers["Referer"].ToString());
 
 		}
@@ -62,6 +64,8 @@ namespace Web_DoTheThao.Controllers
 			{
 				HttpContext.Session.SetJson("Cart", cart);
 			}
+
+			TempData["success"] = "Giảm số lượng sản phẩm thành công";
 			return RedirectToAction("Index");
 		}
 		public async Task<IActionResult> Increase(int Id)
@@ -84,6 +88,8 @@ namespace Web_DoTheThao.Controllers
 			{
 				HttpContext.Session.SetJson("Cart", cart);
 			}
+
+			TempData["success"] = "Tăng số lượng sản phẩm thành công";
 			return RedirectToAction("Index");
 		}
 		public async Task<IActionResult> Remove(int Id)
@@ -98,11 +104,13 @@ namespace Web_DoTheThao.Controllers
 			{
 				HttpContext.Session.SetJson("Cart", cart);
 			}
+			TempData["success"] = "Xóa sản phẩm thành công";
 			return RedirectToAction("Index");
 		}
 		public async Task<IActionResult> Clear()
 		{
 			HttpContext.Session.Remove("Cart");
+			TempData["success"] = "Xóa giỏ hàng thành công";
 			return RedirectToAction("Index");
 		}
 	}

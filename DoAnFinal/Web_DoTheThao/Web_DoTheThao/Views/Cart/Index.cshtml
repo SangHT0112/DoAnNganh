@@ -48,7 +48,7 @@
 									
 								</td>
 								<td class="cart_total">
-									<p class="cart_total_price">@Model.CartItems.Where(x=> x.ProductId== item.ProductId).Sum(x =>x.Quantity*x.Price).ToString()</p>
+									<p class="cart_total_price">@Model.CartItems.Where(x => x.ProductId == item.ProductId).Sum(x => x.Quantity * x.Price).ToString() VND</p>
 								</td>
 								<td class="cart_delete">
 									<a class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
@@ -57,7 +57,7 @@
 						}
 						<tr rowspan="5">
 							<td colspan="5">
-								Grand Total: 	<p class="cart_total_price">@Model.GrandToTal.ToString()</p>
+								Grand Total: 	<p class="cart_total_price">@Model.GrandToTal.ToString() VND</p>
 							</td>
 							<td>
 								<a class="btn btn-danger btn-sn" asp-controller="Cart" asp-action="Clear", style="position:relative; left:10px ;top:-2px"> Clear </a>
