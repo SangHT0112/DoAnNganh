@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Năm 3 - HK1\\DoAnWeb\\DoAnFinal\\DoAnFinal\\Web_DoTheThao\\Web_DoTheThao\\Web_DoTheThao.csproj": {}
+    "D:\\GitHub_DoAnFinal\\DoAnNganh\\DoAnFinal\\Web_DoTheThao\\Web_DoTheThao\\Web_DoTheThao.csproj": {}
   },
   "projects": {
-    "C:\\Năm 3 - HK1\\DoAnWeb\\DoAnFinal\\DoAnFinal\\Web_DoTheThao\\Web_DoTheThao\\Web_DoTheThao.csproj": {
+    "D:\\GitHub_DoAnFinal\\DoAnNganh\\DoAnFinal\\Web_DoTheThao\\Web_DoTheThao\\Web_DoTheThao.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Năm 3 - HK1\\DoAnWeb\\DoAnFinal\\DoAnFinal\\Web_DoTheThao\\Web_DoTheThao\\Web_DoTheThao.csproj",
+        "projectUniqueName": "D:\\GitHub_DoAnFinal\\DoAnNganh\\DoAnFinal\\Web_DoTheThao\\Web_DoTheThao\\Web_DoTheThao.csproj",
         "projectName": "Web_DoTheThao",
-        "projectPath": "C:\\Năm 3 - HK1\\DoAnWeb\\DoAnFinal\\DoAnFinal\\Web_DoTheThao\\Web_DoTheThao\\Web_DoTheThao.csproj",
-        "packagesPath": "C:\\Users\\HTS SinhVienIT\\.nuget\\packages\\",
-        "outputPath": "C:\\Năm 3 - HK1\\DoAnWeb\\DoAnFinal\\DoAnFinal\\Web_DoTheThao\\Web_DoTheThao\\obj\\",
+        "projectPath": "D:\\GitHub_DoAnFinal\\DoAnNganh\\DoAnFinal\\Web_DoTheThao\\Web_DoTheThao\\Web_DoTheThao.csproj",
+        "packagesPath": "C:\\Users\\Fishh\\.nuget\\packages\\",
+        "outputPath": "D:\\GitHub_DoAnFinal\\DoAnNganh\\DoAnFinal\\Web_DoTheThao\\Web_DoTheThao\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\HTS SinhVienIT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Fishh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -89,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

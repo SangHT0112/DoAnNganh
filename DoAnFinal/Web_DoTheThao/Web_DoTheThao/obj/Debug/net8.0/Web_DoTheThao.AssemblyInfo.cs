@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Web_DoTheThao")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9cfaf112b8897190449f526f3e46096dd971b9ef")]
 [assembly: System.Reflection.AssemblyProductAttribute("Web_DoTheThao")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Web_DoTheThao")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

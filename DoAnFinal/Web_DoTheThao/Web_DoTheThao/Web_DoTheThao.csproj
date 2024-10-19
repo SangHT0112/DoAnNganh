@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Areas\Admin\Views\Shared\_NotificationPartial.cshtml" />
+    <Content Remove="Views\_NoteficationPartial.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.10" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.10">
       <PrivateAssets>all</PrivateAssets>
@@ -18,6 +23,23 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\_NoteficationPartial.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\_NoteficationPartial.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Areas\Admin\Views\Shared\_NotificationPartial.cshtml" />
+    <None Include="Views\Shared\_NotificationPartial.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Models\" />
   </ItemGroup>
 
 </Project>
