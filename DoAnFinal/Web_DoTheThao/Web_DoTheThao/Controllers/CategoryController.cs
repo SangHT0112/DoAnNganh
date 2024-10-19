@@ -21,6 +21,6 @@ namespace Web_DoTheThao.Controllers
 
 			return View(await productsByCategory.OrderByDescending(p=>p.Id).ToListAsync());
 		}
-
+	
 	}
 }

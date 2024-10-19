@@ -23,5 +23,23 @@ namespace Web_DoTheThao.Controllers
 			};
 			return View(cartVM);
 		}
+		public async Task<IActionResult> Add(int Id)
+		{
+			ProductModel product = await _dataContext.Products.FindAsync(Id);
+			List<CartItemModel> cart = HttpContext.Session.GetJson<List<CartItemModel>>("Cart") ?? new List<CartItemModel>();
+			CartItemModel cartItems =cart.Where(c=>c.ProductId == Id).FirstOrDefault();
+
+			if(cartItems == null)
+			{
+				cart.Add(new CartItemModel(product));
+			}
+			else
+			{
+				cartItems.Quantity++;
+			}
+			HttpContext.Session.SetJson("Cart", cart);
+
+			return Redirect(Request.Headers["Referer"].ToString());
+		}
 	}
 }
