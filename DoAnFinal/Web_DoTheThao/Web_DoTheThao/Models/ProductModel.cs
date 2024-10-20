@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Web_DoTheThao.Repository.Validation;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Web_DoTheThao.Models
 {
@@ -18,5 +20,9 @@ namespace Web_DoTheThao.Models
 		public CategoryModel Category { get; set; }
 		public BrandModel Brand { get; set; }
 		public string Image { get; set; }
+		[NotMapped]
+		[FileExtension]
+		public IFormFile ImageUpLoad { get; set; }
 	}
+
 }

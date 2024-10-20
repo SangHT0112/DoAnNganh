@@ -44,8 +44,8 @@
 
             <div class="form-group">
                 <label>Hình ảnh</label>
-                <input asp-for="Image" class="form-control-file" />
-                <span asp-validation-for="Image" class="text-danger"></span>
+                <input asp-for="ImageUpLoad" class="form-control-file" />
+                <span asp-validation-for="ImageUpLoad" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <button type="submit" class="btn btn-primary btn-block">Add Product</button>
@@ -55,4 +55,16 @@
         <a asp-action="Index">Quay về trang List Product</a>
     </div>
 </div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial"); /* Thực hiện file validate kiểm tra dữ liệu */
+    }
+    <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace("Description");
+    </script>
+}
+
+
 
